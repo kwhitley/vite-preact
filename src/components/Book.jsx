@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks'
 import styled from 'styled-components'
 
 const StyledBook = styled.main`
-  font-size: 1rem;
+  font-size: 1em;
   color: #222;
   display: inline-block;
   padding: 1em 2.5em 2em 2em;
@@ -41,3 +41,5 @@ export const Book = () => {
     </StyledBook>
   )
 }
+
+export default Book

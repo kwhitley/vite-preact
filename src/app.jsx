@@ -1,6 +1,8 @@
 import { Logo } from './logo'
 import { Counter } from './components/Counter'
-import { Book } from './components/Book'
+import { lazy, Suspense } from 'preact/compat'
+
+const Book = lazy(() => import('./components/Book'))
 
 export function App(props) {
   return (
@@ -23,7 +25,7 @@ export function App(props) {
 
         <br />
 
-        <Book />
+        <Suspense><Book /></Suspense>
       </p>
     </>
   )
