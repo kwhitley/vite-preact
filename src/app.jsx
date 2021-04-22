@@ -1,5 +1,6 @@
 import { Logo } from './logo'
-import { Counter } from './Counter'
+import { Counter } from './components/Counter'
+import { Book } from './components/Book'
 
 export function App(props) {
   return (
@@ -19,6 +20,10 @@ export function App(props) {
         <br />
 
         <Counter />
+
+        <br />
+
+        <Book />
       </p>
     </>
   )
